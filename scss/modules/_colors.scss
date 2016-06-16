@@ -1,7 +1,7 @@
 @import "../partials/base";
 
 * {
-	border: $test-border;
+	// border: $test-border;
 }
 
 .grid-container {
@@ -158,12 +158,71 @@
 					margin-bottom: 10px;
 					font-size: 24px;
 					color: $section-header;
-				span {
-					font-size: 18px;
-					color: $section-main-font;
-				}
+					span {
+						font-size: 18px;
+						color: $section-main-font;
+					}
 				}
 			}
 		}
+	}
+}
+
+/* THIRD SECTION */
+#third-section {
+	h2 {
+		margin-top: -20px;
+		margin-bottom: 20px;
+		font-family: $openSans;
+		font-size: 48px;
+		line-height: 1.25;
+		text-align: center;
+	}
+	.testimonial {
+		float: left;
+		img {
+			width: 80px;
+			height: 55px;
+			margin: 0 auto;
+			display: block;
+		}
+		p {
+			padding: 5px;
+			font-family: $openSans;
+			font-size: 18px;
+			line-height: 1.333;
+			text-align: center;
+			font-style: italic;
+			color: $section-main-font;
+			span {
+				font-style: normal;
+				font-weight: bold;
+			}
+		}
+		.author-container {
+				margin-top: 50px;
+			img {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+			}
+		}
+		.odd {
+			margin-top: 73px;
+		}
+	}
+	.see-more {
+		width: 320px;
+		height: 89px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		font-family: $openSans;
+		font-size: 30px;
+		line-height: 2;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $section-box;
+
 	}
 }
