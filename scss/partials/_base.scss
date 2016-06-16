@@ -1,8 +1,18 @@
 @import "reset";
 @import "grid";
 
-// Variables
+// VARIABLES
+// Colors
 $test-border: 1px solid #ff0000;
-$navigation-blue: #6699ff;
 $white: #ffffff;
 $black: #000000;
+
+$subtle-blue: #6699ff;
+$section-font-blue: #003399;
+$section-box-blue: #2052b5;
+$section-main-font: #333333;
+
+// Fonts
+$myriadPro: "Myriad Pro", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$kurale: "Kurale", serif;
