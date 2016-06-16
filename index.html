@@ -4,31 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="description" content="This is a website built on the basis of the PSD file as a recruitment task">
 	<meta name="keywords" content="Optima Lingua, lorem ipsum, HTML, CSS, Sass, JavaScript, jQuery">
-	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Optima Lingua - website</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/jquery-3.0.0.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kurale' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header>
-		<!-- Rozważyć h1 zamiast div -->
-		<div id="logo"> 
-			Optima Lingua
+	<header class="main-header">
+		<div class="grid-container">
+			<div class="row">
+				<div id=logo>
+					<img src="images/logo.png" alt="OPTIMA LINGUA logo" />
+				</div>
+				<nav class="navigation col-16">
+					<ul>
+						<li>Jak to działa?</li>
+						<li>Opinie klientów</li>
+						<li>Gwarancja jakości</li>
+						<li>Jak zamówić</li>
+						<li>Pytania i odpowiedzi</li>
+					</ul>
+					<!-- <button id="hamburger" type="button" title="Open menu">Hamburger</button> -->
+				</nav>
+				<div class="header-article col-8">
+					<h2>Cupcake ipsum dolor sit amet. Pastry bear claw.</h2>
+					<p>Donut topping danish tiramisu bonbon. Danish wafer sweet roll tiramisu chocolate cake I love icing gingerbread. Powder donut pastry jelly beans jujubes wafer gummi bears carrot cake.</p>
+			</div>
 		</div>
-		<nav class="navigation">
-			<ul>
-				<li>Jak to działa?</li>
-				<li>Opinie klientów</li>
-				<li>Gwarancja jakości</li>
-				<li>Jak zamówić</li>
-				<li>Pytania i odpowiedzi</li>
-			</ul>
-			<button id="hamburger" type="button" title="Open menu">Hamburger</button>
-		</nav>
-		<div class="header-article">
-			<h2>Cupcake ipsum dolor sit amet. Pastry bear claw.</h2>
-			<p>Donut topping danish tiramisu bonbon. Danish wafer sweet roll tiramisu chocolate cake I love icing gingerbread. Powder donut pastry jelly beans jujubes wafer gummi bears carrot cake.</p>
 		</div>
 	</header>
 
@@ -105,5 +107,8 @@
 			</div>
 		</section>
 	</main>
+
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 <body>
 </html>

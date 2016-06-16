@@ -1,0 +1,56 @@
+@import "../partials/base";
+
+* {
+	border: $test-border;
+}
+
+/* HEADER */
+.main-header {
+		background-image: url("../images/header-background-desktop.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 770px;
+		.grid-container {
+			width: 100%;
+			height: auto;
+			max-width: 1180px;
+			margin: 0 auto;
+		}
+		#logo {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			text-align: center;
+			border-bottom: 1px solid $white;
+		}
+		.navigation ul {
+			text-align: center;
+			& li {
+				display: inline-block;
+				list-style-type: none;
+				margin-left: 10px;
+				margin-right: 10px;
+
+				font-family: Kurale, serif;
+				font-size: 24px;
+				color: $white;
+				text-shadow: 2px 0 2px $black;
+				&:first-child {
+					color: $navigation-blue;
+				}
+			}
+		}
+		.header-article {
+			margin-top: 200px;
+
+			color: $white;
+			font-family: "Myriad Pro", sans-serif;
+			line-height: 1.5;
+			h2 {
+				font-size: 48px;
+				font-weight: normal;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+}
