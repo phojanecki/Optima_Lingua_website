@@ -52,6 +52,7 @@ table {
 
 [class*="col-"] {
   padding: 10px;
+  margin: 0 auto;
 }
 
 .row:after {
@@ -171,8 +172,9 @@ table {
 
 .main-header .header-article {
   margin-top: 200px;
-  color: #ffffff;
   font-family: "Myriad Pro", sans-serif;
+  color: #ffffff;
+  float: left;
 }
 
 .main-header .header-article h2 {
@@ -193,8 +195,11 @@ table {
   height: auto;
 }
 
+#first-section h2, #first-section p {
+  padding: 5px;
+}
+
 #first-section h2 {
-  margin: 0 auto;
   margin-top: 70px;
   font-size: 48px;
   color: #003399;
@@ -202,7 +207,6 @@ table {
 }
 
 #first-section p {
-  margin: 0 auto;
   font-family: "Myriad Pro", sans-serif;
   font-size: 18px;
   color: #333333;
@@ -210,18 +214,17 @@ table {
 }
 
 #first-section .box-container {
-  margin: 0 auto;
   text-align: center;
 }
 
 #first-section .box-container .additional-box {
-  z-index: 99;
   position: relative;
-  width: 335px;
+  float: left;
+  width: 330px;
   margin-top: 50px;
   padding: 35px 10px 10px 10px;
-  float: left;
   background-color: #2052b5;
+  z-index: 99;
 }
 
 #first-section .box-container .additional-box:first-child {
@@ -235,8 +238,8 @@ table {
 #first-section .box-container .additional-box:after {
   position: absolute;
   content: "";
-  border-left: 167px solid transparent;
-  border-right: 167px solid transparent;
+  border-left: 165px solid transparent;
+  border-right: 165px solid transparent;
   border-top: 130px solid #2052b5;
   left: 0px;
   bottom: -130px;
@@ -271,11 +274,42 @@ table {
 }
 
 #second-section h2 {
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 48px;
   line-height: 1.25;
   text-align: center;
+}
+
+#second-section .box-container .additional-info {
+  float: left;
+  width: 330px;
+}
+
+#second-section .box-container .additional-info h3, #second-section .box-container .additional-info p, #second-section .box-container .additional-info li {
+  font-family: "Open Sans", sans-serif;
+}
+
+#second-section .box-container .additional-info h3 {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #003399;
+}
+
+#second-section .box-container .additional-info p {
+  font-size: 18px;
+  line-height: 1.25;
+  color: #333333;
+}
+
+#second-section .box-container .additional-info ul li {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #003399;
+}
+
+#second-section .box-container .additional-info ul li span {
+  font-size: 18px;
+  color: #333333;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -332,6 +366,7 @@ table {
 
 [class*="col-"] {
   padding: 10px;
+  margin: 0 auto;
 }
 
 .row:after {

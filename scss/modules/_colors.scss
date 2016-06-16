@@ -35,14 +35,15 @@
 				color: $white;
 				text-shadow: 2px 0 2px $black;
 				&:first-child {
-					color: $subtle-blue;
+					color: $subtle;
 				}
 			}
 		}
 		.header-article {
 			margin-top: 200px;
-			color: $white;
 			font-family: $myriadPro;
+			color: $white;
+			float: left;
 			h2 {
 				font-size: 48px;
 				font-weight: normal;
@@ -60,43 +61,43 @@
 	font-family: $openSans;
 	text-align: center;
 	height: auto;
+	h2, p {
+		padding: 5px;
+	}
 	h2 {
-		margin: 0 auto;
 		margin-top: 70px;
 		font-size: 48px;
-		color: $section-font-blue;
+		color: $section-header;;
 		line-height: 1.25;
 	}
 	p {
-		margin: 0 auto;
 		font-family: $myriadPro;
 		font-size: 18px;
 		color: $section-main-font;
 		line-height: 1.5;
 	}
 	.box-container {
-		margin: 0 auto;
 		text-align: center;
 		.additional-box {
-			z-index: 99;
 			position: relative;
-			width: 335px;
+			float: left;
+			width: 330px;
 			margin-top: 50px;
 			padding: 35px 10px 10px 10px;
-			float: left;
-			background-color: $section-box-blue;
+			background-color: $section-box;
+			z-index: 99;
 			&:first-child {
-				border-right: 3px solid $subtle-blue;
+				border-right: 3px solid $subtle;
 			}
 			&:nth-child(2) {
-				border-right: 1px solid $subtle-blue;
+				border-right: 1px solid $subtle;
 			}
 // triangle down
 			&:after {
 				position: absolute;
 				content: "";
-				border-left: 167px solid transparent;
-				border-right: 167px solid transparent;
+				border-left: 165px solid transparent;
+				border-right: 165px solid transparent;
 				border-top: 130px solid #2052b5;
 				left: 0px;
 				bottom: -130px;
@@ -129,10 +130,40 @@
 	background-position: center;
 	top: -50px;
 	h2 {
-		margin: 0 auto;
 		font-family: $openSans;
 		font-size: 48px;
 		line-height: 1.25;
 		text-align: center;
+	}
+	.box-container{
+		.additional-info {
+			float: left;
+			width: 330px;
+			h3, p, li {
+				font-family: $openSans;
+			}
+			h3 {
+				font-size: 24px;
+				line-height: 1.333;
+				color: $section-header;
+			}
+			p {
+				// padding: 5px;
+				font-size: 18px;
+				line-height: 1.25;
+				color: $section-main-font;
+			}
+			ul {
+				li {
+					margin-bottom: 10px;
+					font-size: 24px;
+					color: $section-header;
+				span {
+					font-size: 18px;
+					color: $section-main-font;
+				}
+				}
+			}
+		}
 	}
 }
