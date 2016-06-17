@@ -12,20 +12,34 @@
 }
 
 /* HEADER */
-.main-header {
-		background-image: url("../images/header-background-desktop.jpg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: auto;
-		#logo {
-			padding-top: 40px;
-			padding-bottom: 40px;
-			text-align: center;
-			border-bottom: 1px solid $white;
+#main-header {
+	position: relative;
+	background-image: url("../images/header-background-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 700px;
+	#logo {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+		border-bottom: 1px solid $white;
+	}
+	.navigation {
+		#hamburger-menu {
+		  display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 25px;
+			background-image: url("../images/hamburger.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+		  cursor: pointer;
 		}
-		.navigation ul {
+		ul {
 			text-align: center;
-			& li {
+			li {
 				display: inline-block;
 				list-style-type: none;
 				margin-left: 10px;
@@ -35,22 +49,41 @@
 				color: $white;
 				text-shadow: 2px 0 2px $black;
 				&:first-child {
-					color: $subtle;
+					color: $subtle !important;
+					a {
+						&:visited {
+							color: $subtle !important;
+						}
+						&:hover {
+							color: $section-box !important;
+						}
+					}
+				}
+				a {
+					text-decoration: none;
+					&:visited {
+						color: $white;
+					}
+					&:hover {
+						color: $section-box;
+					}
 				}
 			}
 		}
+		}
 		.header-article {
-			margin-top: 200px;
+			position: absolute;
+			bottom: 0;
 			font-family: $myriadPro;
 			color: $white;
 			float: left;
 			h2 {
-				font-size: 48px;
+				font-size: $h2-font-L;
 				font-weight: normal;
 				line-height: 1.25;
 			}
 			p {
-				font-size: 18px;
+				font-size: $p-font-L;
 				line-height: 1.333;
 			}
 		}
@@ -66,13 +99,13 @@
 	}
 	h2 {
 		margin-top: 70px;
-		font-size: 48px;
+		font-size: $h2-font-L;
 		color: $section-header;;
 		line-height: 1.25;
 	}
 	p {
 		font-family: $myriadPro;
-		font-size: 18px;
+		font-size: $p-font-L;
 		color: $section-main-font;
 		line-height: 1.5;
 	}
@@ -108,12 +141,12 @@
 				text-align: center;
 			}
 			h3 {
-				font-size: 24px;
+				font-size: $h3-font-L;
 				font-weight: bold;
 				line-height: 1.25;
 			}
 			p {
-				font-size: 18px;
+				font-size: $p-font-L;
 				line-height: 1.333;
 			}
 		}
@@ -129,9 +162,10 @@
 	background-size: 100%;
 	background-position: center;
 	top: -50px;
+	height: 790px;
 	h2 {
 		font-family: $openSans;
-		font-size: 48px;
+		font-size: $h2-font-L;
 		line-height: 1.25;
 		text-align: center;
 	}
@@ -143,13 +177,13 @@
 				font-family: $openSans;
 			}
 			h3 {
-				font-size: 24px;
+				font-size: $h3-font-L;
 				line-height: 1.333;
 				color: $section-header;
 			}
 			p {
 				// padding: 5px;
-				font-size: 18px;
+				font-size: $p-font-L;
 				line-height: 1.25;
 				color: $section-main-font;
 			}
@@ -170,11 +204,13 @@
 
 /* THIRD SECTION */
 #third-section {
+	position: relative;
+	display: block;
 	h2 {
 		margin-top: -20px;
 		margin-bottom: 20px;
 		font-family: $openSans;
-		font-size: 48px;
+		font-size: $h2-font-L;
 		line-height: 1.25;
 		text-align: center;
 	}
@@ -189,7 +225,7 @@
 		p {
 			padding: 5px;
 			font-family: $openSans;
-			font-size: 18px;
+			font-size: $p-font-L;
 			line-height: 1.333;
 			text-align: center;
 			font-style: italic;
@@ -223,6 +259,15 @@
 		text-transform: uppercase;
 		color: $white;
 		background-color: $section-box;
-
+		a {
+			text-decoration: none;
+			display: block;
+			&:visited {
+				color: $white;
+			}
+		}
+		&:hover {
+			background-color: $section-header;
+		}
 	}
 }
