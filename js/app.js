@@ -24,4 +24,15 @@ $(document).ready(function(){
     }
   });
 
+  // /* ADDING CLASS WHEN RESIZE WINDOW */
+  // var $window = $(window);
+  // var $sectionHeader = $("#first-section .box-container .additional-box h3");
+  // var $sectionParagraph = $("#first-section .box-container .additional-box p");
+  //
+  // $window.resize(function (){
+  //   if ($window.width() <= 779) {
+  //     $sectionHeader.addClass("col-8");
+  //     $sectionParagraph.addClass("col-8");
+  //   }
+  // });
 });

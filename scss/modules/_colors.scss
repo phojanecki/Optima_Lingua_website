@@ -16,7 +16,7 @@
 	position: relative;
 	background-image: url("../images/header-background-desktop.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	height: 700px;
 	#logo {
 		padding-top: 40px;
@@ -114,7 +114,7 @@
 		.additional-box {
 			position: relative;
 			float: left;
-			width: 330px;
+			width: 33.333%;
 			margin-top: 50px;
 			padding: 35px 10px 10px 10px;
 			background-color: $section-box;
@@ -129,8 +129,8 @@
 			&:after {
 				position: absolute;
 				content: "";
-				border-left: 165px solid transparent;
-				border-right: 165px solid transparent;
+				border-left: 169px solid transparent;
+				border-right: 169px solid transparent;
 				border-top: 130px solid #2052b5;
 				left: 0px;
 				bottom: -130px;
@@ -172,7 +172,7 @@
 	.box-container{
 		.additional-info {
 			float: left;
-			width: 330px;
+			width: 33.333%;
 			h3, p, li {
 				font-family: $openSans;
 			}

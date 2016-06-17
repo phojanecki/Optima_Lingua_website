@@ -10,7 +10,7 @@
   position: relative;
   background-image: url("../images/header-background-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 700px;
 }
 
@@ -124,7 +124,7 @@
 #first-section .box-container .additional-box {
   position: relative;
   float: left;
-  width: 330px;
+  width: 33.333%;
   margin-top: 50px;
   padding: 35px 10px 10px 10px;
   background-color: #2052b5;
@@ -142,8 +142,8 @@
 #first-section .box-container .additional-box:after {
   position: absolute;
   content: "";
-  border-left: 165px solid transparent;
-  border-right: 165px solid transparent;
+  border-left: 169px solid transparent;
+  border-right: 169px solid transparent;
   border-top: 130px solid #2052b5;
   left: 0px;
   bottom: -130px;
@@ -187,7 +187,7 @@
 
 #second-section .box-container .additional-info {
   float: left;
-  width: 330px;
+  width: 33.333%;
 }
 
 #second-section .box-container .additional-info h3, #second-section .box-container .additional-info p, #second-section .box-container .additional-info li {
@@ -426,7 +426,10 @@ table {
   width: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/**********************************************
+MEDIA QUERY FOR MOBILES
+***********************************************/
+@media screen and (min-width: 320px) and (max-width: 779px) {
   h2 {
     font-size: 16px !important;
   }
@@ -481,7 +484,8 @@ table {
     margin-top: 20px;
   }
   #first-section .box-container .additional-box {
-    margin: 0;
+    margin: 0 auto;
+    float: none;
     width: 100%;
     padding: 10px;
     border-right: none !important;
@@ -500,8 +504,8 @@ table {
     width: 33.333%;
   }
   #second-section .box-container .additional-info p, #second-section .box-container .additional-info ul {
-    overflow: auto;
     height: 160px;
+    overflow: auto;
   }
   #second-section .box-container .additional-info h3 {
     text-align: center;
@@ -511,7 +515,7 @@ table {
     padding: 0 10px 0 20px;
   }
   #second-section .box-container .additional-info ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   #second-section .box-container .additional-info ul li span {
     font-size: 10px;
@@ -544,5 +548,44 @@ table {
     width: 160px;
     height: 45px;
     font-size: 14px;
+  }
+}
+
+/**********************************************
+MEDIA QUERY FOR TABLETS
+***********************************************/
+@media screen and (min-width: 780px) and (max-width: 1069px) {
+  h2 {
+    font-size: 32px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  /* HEADER */
+  #main-header {
+    height: 500px;
+  }
+  #main-header .navigation ul li {
+    font-size: 18px;
+  }
+  #main-header .header-article h2, #main-header .header-article p {
+    width: 150%;
+  }
+  /* FIRST SECTION */
+  #first-section .box-container .additional-box:after {
+    display: none;
+  }
+  /* SECOND SECTION */
+  #second-section .box-container .additional-info ul li span {
+    font-size: 18px;
+  }
+  /* THIRD SECTION */
+  #third-section .see-more {
+    width: 240px;
+    height: 67px;
+    font-size: 20px;
   }
 }

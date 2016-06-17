@@ -1,6 +1,9 @@
 @import "base";
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/**********************************************
+MEDIA QUERY FOR MOBILES
+***********************************************/
+@media screen and (min-width: 320px) and (max-width: 779px) {
   h2 {
     font-size: $h2-font-S !important;
   }
@@ -60,7 +63,8 @@
     }
     .box-container {
       .additional-box {
-        margin: 0;
+        margin: 0 auto;
+        float: none;
         width: 100%;
         padding: 10px;
         border-right: none !important;
@@ -71,6 +75,7 @@
       }
     }
   }
+
   /* SECOND SECTION */
   #second-section {
     top: 10px;
@@ -80,8 +85,8 @@
       .additional-info {
         width: 33.333%;
         p, ul {
-          overflow: auto;
           height: 160px;
+          overflow: auto;
         }
         h3 {
           text-align: center;
@@ -90,7 +95,7 @@
         ul {
           padding: 0 10px 0 20px;
           li {
-            font-size: 12px;
+            font-size: 10px;
             span {
               font-size: $p-font-S;
             }
@@ -133,4 +138,72 @@
       font-size: $h3-font-S;
     }
   }
+}
+
+/**********************************************
+MEDIA QUERY FOR TABLETS
+***********************************************/
+@media screen and (min-width: 780px) and (max-width: 1069px) {
+  h2 {
+    font-size: $h2-font-M !important;
+  }
+  h3 {
+    font-size: $h3-font-M !important;
+  }
+  p {
+    font-size: $p-font-M !important;
+  }
+
+/* HEADER */
+#main-header {
+  height: 500px;
+  .navigation {
+    ul {
+      li {
+        font-size: $p-font-L;
+      }
+    }
+  }
+  .header-article {
+    h2, p {
+      width: 150%;
+    }
+  }
+}
+
+/* FIRST SECTION */
+#first-section {
+	.box-container {
+		.additional-box {
+// triangle down
+			&:after {
+        display: none;
+			}
+    }
+  }
+}
+
+/* SECOND SECTION */
+#second-section {
+  .box-container {
+    .additional-info {
+      ul {
+        li {
+          span {
+            font-size: $p-font-L;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* THIRD SECTION */
+#third-section {
+  .see-more {
+    width: 240px;
+    height: 67px;
+    font-size: 20px;
+  }
+}
 }
