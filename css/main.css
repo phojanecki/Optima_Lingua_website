@@ -1,3 +1,7 @@
+* {
+  border: 1px solid #ff0000;
+}
+
 .grid-container {
   width: 100%;
   height: auto;
@@ -10,15 +14,22 @@
   position: relative;
   background-image: url("../images/header-background-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
+  background-size: auto;
+  background-position: top center;
+  height: 770px;
 }
 
 #main-header #logo {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
+  display: flex;
+  padding-top: 46px;
   border-bottom: 1px solid #ffffff;
+  height: 127px;
+}
+
+#main-header #logo img {
+  width: 525px;
+  height: 46px;
+  margin: 0 auto;
 }
 
 #main-header .navigation #hamburger-menu {
@@ -26,8 +37,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 25px;
+  height: 26px;
   background-image: url("../images/hamburger.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -41,12 +51,10 @@
 #main-header .navigation ul li {
   display: inline-block;
   list-style-type: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   font-family: "Kurale", serif;
   font-size: 24px;
   color: #ffffff;
-  text-shadow: 2px 0 2px #000000;
 }
 
 #main-header .navigation ul li:first-child {
@@ -55,10 +63,6 @@
 
 #main-header .navigation ul li:first-child a:visited {
   color: #6699ff !important;
-}
-
-#main-header .navigation ul li:first-child a:hover {
-  color: #2052b5 !important;
 }
 
 #main-header .navigation ul li a {
@@ -70,24 +74,26 @@
 }
 
 #main-header .navigation ul li a:hover {
-  color: #2052b5;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 #main-header .header-article {
   position: absolute;
   bottom: 0;
+  padding: 0;
   font-family: "Myriad Pro", sans-serif;
   color: #ffffff;
-  float: left;
 }
 
 #main-header .header-article h2 {
+  margin: 0;
   font-size: 48px;
   font-weight: normal;
   line-height: 1.25;
 }
 
 #main-header .header-article p {
+  margin-bottom: 50px;
   font-size: 18px;
   line-height: 1.333;
 }
