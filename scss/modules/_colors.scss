@@ -1,7 +1,7 @@
 @import "../partials/base";
 
 * {
-	border: $test-border;
+	// border: $test-border;
 }
 
 .grid-container {
@@ -95,7 +95,7 @@
 #first-section {
 	font-family: $openSans;
 	text-align: center;
-	height: auto;
+	height: 823px;
 	h2, p {
 		padding: 5px;
 	}
@@ -106,6 +106,7 @@
 		line-height: 1.25;
 	}
 	p {
+		margin: 50px auto;
 		font-family: $myriadPro;
 		font-size: $p-font-L;
 		color: $section-main-font;
@@ -116,26 +117,39 @@
 		.additional-box {
 			position: relative;
 			float: left;
-			width: 33.333%;
-			margin-top: 50px;
+			width: 337px;
+		  height: 498px;
 			padding: 35px 10px 10px 10px;
 			background-color: $section-box;
 			z-index: 99;
 			&:first-child {
-				border-right: 3px solid $subtle;
+				border-right: 2px solid $subtle;
 			}
-			&:nth-child(2) {
+			&:nth-child(3) {
+				border-left: 2px solid $subtle;
 				border-right: 1px solid $subtle;
 			}
 // triangle down
 			&:after {
 				position: absolute;
 				content: "";
-				border-left: 169px solid transparent;
+				border-left: 165px solid transparent;
 				border-right: 169px solid transparent;
 				border-top: 130px solid #2052b5;
 				left: 0px;
 				bottom: -130px;
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				border-left: 175px solid transparent;
+		    border-right: 175px solid transparent;
+		    border-top: 136px solid #6699ff;
+		    left: 1px;
+		    bottom: -136px;
+			}
+			&:last-child:before {
+				display: none;
 			}
 			h3, p {
 				color: $white;
@@ -143,11 +157,14 @@
 				text-align: center;
 			}
 			h3 {
+				margin-top: 30px;
 				font-size: $h3-font-L;
 				font-weight: bold;
 				line-height: 1.25;
 			}
 			p {
+				margin: 0;
+				padding: 7px;
 				font-size: $p-font-L;
 				line-height: 1.333;
 			}
