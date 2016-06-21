@@ -1,3 +1,6 @@
+/************* VARIABLES *************/
+/**** Colors ****/
+/**** Fonts ****/
 .grid-container {
   width: 100%;
   height: auto;
@@ -12,6 +15,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top center;
+  background-color: #312f30;
   height: 770px;
 }
 
@@ -182,7 +186,6 @@
 
 #first-section .box-container .additional-box p {
   margin: 0;
-  padding: 7px;
   font-size: 18px;
   line-height: 1.333;
 }
@@ -193,9 +196,10 @@
   padding-top: 200px;
   background-image: url("../images/second-section-background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  top: -50px;
+  background-size: cover;
+  background-position: 50% 80%;
+  top: -15px;
+  width: 100%;
   height: 790px;
 }
 
@@ -222,14 +226,19 @@
 }
 
 #second-section .box-container .additional-info p {
+  margin-right: 20px;
   font-size: 18px;
   line-height: 1.25;
   color: #333333;
 }
 
+#second-section .box-container .additional-info ul {
+  margin-right: 20px;
+}
+
 #second-section .box-container .additional-info ul li {
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   color: #003399;
 }
 
@@ -447,6 +456,9 @@ table {
   width: 100%;
 }
 
+/************* VARIABLES *************/
+/**** Colors ****/
+/**** Fonts ****/
 /**********************************************
 MEDIA QUERY FOR MOBILES
 ***********************************************/
@@ -610,3 +622,7 @@ MEDIA QUERY FOR TABLETS
     font-size: 20px;
   }
 }
+
+/************* VARIABLES *************/
+/**** Colors ****/
+/**** Fonts ****/
