@@ -1,5 +1,6 @@
 @import "../partials/base";
 
+/*** ADDS BORDER TO EVERY ELEMENT ***/
 * {
 	// border: $test-border;
 }
@@ -11,7 +12,7 @@
 	margin: 0 auto;
 }
 
-/* HEADER */
+/*** HEADER ***/
 #main-header {
 	position: relative;
 	background-image: url("../images/header-background-desktop.jpg");
@@ -92,7 +93,7 @@
 		}
 }
 
-/* FIRST SECTION */
+/*** FIRST SECTION ***/
 #first-section {
 	font-family: $openSans;
 	text-align: center;
@@ -134,7 +135,7 @@
 			&:after {
 				position: absolute;
 				content: "";
-				border-left: 165px solid transparent;
+				border-left: 166px solid transparent;
 				border-right: 169px solid transparent;
 				border-top: 130px solid #2052b5;
 				left: 0px;
@@ -143,11 +144,11 @@
 			&:before {
 				position: absolute;
 				content: "";
-				border-left: 175px solid transparent;
-		    border-right: 175px solid transparent;
-		    border-top: 136px solid #6699ff;
-		    left: 1px;
-		    bottom: -136px;
+				border-left: 173px solid transparent;
+				border-right: 175px solid transparent;
+				border-top: 136px solid #6699ff;
+				left: 0px;
+				bottom: -136px;
 			}
 			&:last-child:before {
 				display: none;
@@ -173,10 +174,10 @@
 	}
 }
 
-/* SECOND SECTION */
+/*** SECOND SECTION ***/
 #second-section {
 	position: relative;
-	padding-top: 200px;
+	padding-top: 225px;
 	background-image: url("../images/second-section-background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -203,7 +204,7 @@
 				color: $section-header;
 			}
 			p {
-				margin-right: 20px;
+				margin-right: 15px;
 				font-size: $p-font-L;
 				line-height: 1.25;
 				color: $section-main-font;
@@ -224,13 +225,12 @@
 	}
 }
 
-/* THIRD SECTION */
+/*** THIRD SECTION ***/
 #third-section {
-	position: relative;
-	display: block;
+	height: 1037px;
 	h2 {
-		margin-top: -20px;
-		margin-bottom: 20px;
+		margin-top: 20px;
+		margin-bottom: 40px;
 		font-family: $openSans;
 		font-size: $h2-font-L;
 		line-height: 1.25;
@@ -238,13 +238,15 @@
 	}
 	.testimonial {
 		float: left;
-		img {
+		.quotation-mark {
 			width: 80px;
 			height: 55px;
 			margin: 0 auto;
+			margin-bottom: 30px;
 			display: block;
 		}
-		p {
+		.comment {
+			height: 311px;
 			padding: 5px;
 			font-family: $openSans;
 			font-size: $p-font-L;
@@ -252,28 +254,28 @@
 			text-align: center;
 			font-style: italic;
 			color: $section-main-font;
-			span {
-				font-style: normal;
-				font-weight: bold;
-			}
 		}
 		.author-container {
-				margin-top: 50px;
-			img {
+			margin-top: 30px;
+			.author-picture {
 				width: 100px;
 				height: 100px;
 				border-radius: 50%;
+				display: block;
+				margin: 0 auto;
 			}
 		}
-		.odd {
-			margin-top: 73px;
+		.author-name {
+			@extend .comment;
+			height: auto;
+			font-style: normal;
+			font-weight: bold;
 		}
 	}
 	.see-more {
 		width: 320px;
 		height: 89px;
-		margin-top: 20px;
-		margin-bottom: 50px;
+		margin-top: 23px;
 		font-family: $openSans;
 		font-size: 30px;
 		line-height: 2;
@@ -284,6 +286,7 @@
 		a {
 			text-decoration: none;
 			display: block;
+			text-align: center;
 			&:visited {
 				color: $white;
 			}
